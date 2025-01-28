@@ -1,3 +1,3 @@
-# Portfolio Template
+# Portfolio
 
 ## To View the live site [click here](https://dottdesign.github.io/portfolio/)
