@@ -346,23 +346,23 @@ if($(".scroll").length) {
              circular bars
      ====================================== */
 
-    $(".circular-wrap").appear(function () {
-        $(".circle").circleProgress({
-            size: 210,
-            lineCap: "round",
-            fill: {
-                gradient: ["#f71c52", "#554c86"]
-            },
-        });
-    });
+    // $(".circular-wrap").appear(function () {
+    //     $(".circle").circleProgress({
+    //         size: 210,
+    //         lineCap: "round",
+    //         fill: {
+    //             gradient: ["#f71c52", "#554c86"]
+    //         },
+    //     });
+    // });
 
 
-    $(".circular-wrap.dark").appear(function () {
-        $('.myskill').circleProgress({
-            lineCap: "round",
-            size: 200,
-        });
-    });
+    // $(".circular-wrap.dark").appear(function () {
+    //     $('.myskill').circleProgress({
+    //         lineCap: "round",
+    //         size: 200,
+    //     });
+    // });
 
     /* ===================================
                  Wow Effects
