@@ -714,9 +714,11 @@
     contact Section Start
     ====================================== -->
 <section class="contact-sec padding-top padding-bottom" id="contact-sec">
+    <div class="left-overlay"></div>
+
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-7 hide">
                 <h4 class="heading text-center text-lg-left">GET IN TOUCH</h4>
                 <div class="contact-form">
                     <form class="row contact-form wow fadeInLeft" action="process.php" id="contact-form" method="post">
@@ -744,26 +746,20 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-12 col-md-5">
                         <canvas width="auto" height="50px" id="captcha" >captcha text</canvas>
-                        
                     </div>
                     <div class="col-12 col-md-7">
                        <input id="CaptchatextBox" type="text" name="text" placeholder="Enter Captcha Text">
                    </div>
-                    
+
                             <div class="col-12 col-md-5">
                             <button class=blue-btn rounded-pill w-100" id="refreshButton" type="button"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i>Refresh Captcha<span></span><span></span><span></span><span></span><span></span></button>
                             </div>  
-
-
                             <div class="col-12 col-md-7">
                             <button class=blue-btn rounded-pill w-100 contact_btn" id="submitButton" type="submit"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i>Send Message<span></span><span></span><span></span><span></span><span></span></button>
                         </div>
                             <span id="output"></span>
-                      
- 
                     </form>
                 </div>
                 </div>
