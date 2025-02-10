@@ -1,4 +1,4 @@
-<?php
+<?php 
 // Configure your Subject Prefix and Recipient here
 $subjectPrefix = '[Contact via website]';
 $emailTo       = 'dottenbreit@gmail.com';

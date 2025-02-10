@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><!--<![endif]-->
-
+<html lang="en">
     <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--======  Global site tag (gtag.js) - Google Analytics ======-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20379996-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -11,11 +10,12 @@
 
       gtag('config', 'UA-20379996-1');
     </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <!--====== USEFULL META ======-->
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+
 
     <!--====== TITLE TAG ======-->
     <title>dottDesign - Derrick Ottenbreit / UI Developer</title>
@@ -24,14 +24,14 @@
     <meta name="keywords" content="CV, UI Developer, Remote UI Developer, Online CV">
     <meta name="author" content="Derrick Ottenbreit">
 
-    <!-- Facebook Meta Tags -->
+    <!--====== Facebook Meta Tags ======-->
     <meta property="og:url" content="https://dottdesign.github.io/portfolio/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="dottDesign - Derrick Ottenbreit UI Developer">
     <meta property="og:description" content="Professional Website for Derrick Ottenbreit - UI Developer">
     <meta property="og:image" content="/img/dottDesign-Share.jpg">
     
-    <!-- Twitter Meta Tags -->
+    <!--====== Twitter Meta Tags ======-->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="dottdesign.ca">
     <meta property="twitter:url" content="https://dottdesign.github.io/portfolio">
@@ -39,750 +39,829 @@
     <meta name="twitter:description" content="Professional Website for Derrick Ottenbreit - UI Developer">
     <meta name="twitter:image" content="/img/dottDesign-Share.jpg">
 
-
-
     <!--====== FAVICON ICON =======-->
     <link rel="shortcut icon" type="image/ico" href="img/fav.png">
+    
+    <!-- Bundle -->
+    <link href="css/bundle.min.css" rel="stylesheet">
+    <!-- Plugin Css -->
+    <link href="css/line-awesome.min.css" rel="stylesheet">
+    <link href="css/revolution-settings.min.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/cubeportfolio.min.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/wow.css" rel="stylesheet">
 
-    <!--====== STYLESHEETS ======-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/font-awesome.min.css" >
-
-    <!--====== MAIN STYLESHEETS ======-->
-    <link href="style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
-
-
+    <!-- Style Sheet -->
+    <link href="css/blog.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!--- PRELOADER -->
-    <div class="preeloader" style="display: none;">
-        <div class="preloader-spinner">
-            <img src="img/preloader.gif" alt="">
+<!-- Preloader -->
+<div class="preloader">
+    <div class="center">
+        <div class="loader loader-32">
+            <div class='loader-container'>
+                <div class='ball-wrapper'>
+                    <div class='ball-holder'>
+                        <div class='ball'></div>
+                    </div>
+                    <div class='shadow'></div>
+                </div>
+                <div class='ball-wrapper'>
+                    <div class='ball-holder'>
+                        <div class='ball'></div>
+                    </div>
+                    <div class='shadow'></div>
+                </div>
+                <div class='ball-wrapper'>
+                    <div class='ball-holder'>
+                        <div class='ball'></div>
+                    </div>
+                    <div class='shadow'></div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+<!-- Preloader End -->
 
-    <!--SCROLL TO TOP-->
-    <a href="#home" class="scrolltotop" data-ol-has-click-handler="" style="bottom: 20px; display: none;"><i class="fa fa-long-arrow-up"></i></a>
+<!--Header Start-->
+<header id="home">
 
-    <!--START TOP AREA-->
-    <header class="top-area" id="home">
-        <div class="top-area-bg"></div>
-        <div class="header-top-area">
-            <!--MAINMENU AREA-->
-            <div id="mainmenu-area-sticky-wrapper" class="sticky-wrapper" style="height: 60px;"><div class="mainmenu-area" id="mainmenu-area" style="">
-                <div class="mainmenu-area-bg"></div>
-                <nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a href="https://dottdesign.github.io/portfolio/#home" class="navbar-brand" data-ol-has-click-handler=""><img src="img/logo.png" alt="logo"></a>
-                        </div>
-                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
-                            <ul id="nav" class="nav navbar-nav cl-effect-11">
-                                <li class="active"><a href="#home" data-ol-has-click-handler="">home</a></li>
-                                <li class=""><a href="#about" data-ol-has-click-handler="">about</a></li>
-                                <li class=""><a href="#service" data-ol-has-click-handler="">Service</a></li>
-                                <li class=""><a href="#experience" data-ol-has-click-handler="">Experience</a></li>
-                                <!-- <li class=""><a href="#portfolio" data-ol-has-click-handler="">Portfolio</a></li> -->
-                                <!-- <li class=""><a href="#testmonial" data-ol-has-click-handler="">Testmonial</a></li> -->
-                                <!-- <li class=""><a href="#blog" data-ol-has-click-handler="">Blog</a></li> -->
-                                <li class=""><a href="#contact" data-ol-has-click-handler="">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div></div>
-            <!--END MAINMENU AREA END-->
+    <div class="inner-header">
+        <!--colored-lines-->
+        <div class="color-lines row no-gutters">
+            <div class="col-4 bg-stone"></div>
+            <div class="col-4 bg-blue"></div>
+            <div class="col-4 bg-green"></div>
         </div>
-        <div class="welcome-text-area">
+        <!--upper-nav-->
+        <div class="upper-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div class="welcome-text">
-                            <h6>Hi, I am</h6>
-                            <h1><span class="color-1">Derrick</span> Ottenbreit</h1>
-                             <h3><span class="color-1">dott</span>Design</h3>
-                            <p>FRONTEND / UI DEVELOPER</p>
-                        </div>
+                    <div class="col-12">
+                        <ul class="top-personal-info">
+                            <li><a target="_blank" href="https://goo.gl/maps/FfLykZhui1EfzYJr9"><i class="lni lni-location-arrow-right addr"></i> Surrey BC., Canada</a></li>
+                            <li><a href="mailto:dottenbreit@gmail.com"><i class="las la-envelope"></i> e-mail</a></li>
+                            <li class=""><a target="_blank" href="https://www.linkedin.com/in/derrickottenbreit" class="link-holder link-in"><i class="lab la-linkedin-in"></i></a></li>
+                            <li class=""><a target="_blank" href="https://github.com/dottDesign/" class="link-holder git"><i class="lni lni-github"></i></a></li>
+
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="welcome-img-layer">
-                 <img class="me-image" src="img/slide_top_layer1.png" alt="">
             </div>
         </div>
-    </header>
-    <!--END TOP AREA-->
-
-    <!--ABOUT AREA-->
-    <section class="about-area section-padding" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="hide col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                    <div class="about-image-area wow fadeIn" style="visibility: hidden; animation-name: fadeIn;">
-                        <img src="img/about_man.jpg" alt="">
+        <!--main nav-->
+        <div class="main-navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-lg-3">
+                        <a class="navbar-brand simple-nav-logo" href="#">
+                            <img src="img/logow.png" alt="logo">
+                        </a>
+                        <a class="navbar-brand fixed-nav-logo" href="#">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
                     </div>
-                     <a href="cv/Derrick-Ottenbreit-Resume.pdf" class="download-btn">Download Cv</a>
-                </div>
-                <div class="col-md-12 col-lg-12 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
-                    <div class="about-content wow fadeIn" style="visibility: hidden; animation-name: fadeIn;">
-                        <div class="about-details">
-                            <h3 class="text-center">About Me</h3>
-
-
-<p>Hi there! I'm Derrick, I am a web development leader with 16+ years of experience, leading teams and delivering successful projects.</p>
-
-<p>I love a good challenge, whether it's designing something new or collaborating with clients to create something you wouldn't have thought possible. </p>
-<blockquote>“No! Try not. Do. Or do not. There is no try.” <br/><cite>~Yoda</cite></blockquote>
-
-<p>
-Expertise spans front-end development, CMS/eCommerce, branding, and team leadership. Proven ability to lead cross functional teams, mentor developers, and implement efficient workflows. Successfully delivered 200+ high-traffic, accessible websites with optimized performance and user engagement. Skilled in UI/UX, CMS integrations, and translating client needs into successful, results-driven solutions.</p>
-
-<p>I take pride in ensuring our clients get exactly what they want and need. When I'm not working in my home office, you'll find me spending time with my beautiful wife, two amazing children & friends.</p>
-
-<p>                     <a href="cv/Derrick-Ottenbreit-Resume.pdf" class="download-btn">Download My CV</a></p>
-
-                        </div>
-                        <div class="hide skillst wow" style="visibility: hidden; animation-name: fadeIn;">
-                  
-                            <div class="skills">
-                                <div class="skill">
-                                    <div class="skill-title">
-                                        Web Development
-                                        <div class="count"><span>80%</span></div>
-                                    </div>
-                                    
-                                    <div class="skill-bar" data-bar="80"><span></span></div>
-                                </div>
-                                <!-- #skill -->
-                                <div class="skill">
-                                    <div class="skill-title">
-                                       Web Design
-                                        <div class="count"><span>75%</span></div>
-                                    </div>
-                                    
-                                    <div class="skill-bar" data-bar="70"><span></span></div>
-                                </div>
-                                <!-- #skill -->
-                                <div class="skill">
-                                    <div class="skill-title">
-                                        Branding & Identity
-                                        <div class="count"><span>60%</span></div>
-                                    </div>
-                                    
-                                    <div class="skill-bar" data-bar="60"><span></span></div>
-                                </div>
-                                <!-- #skill -->
-                                <div class="skill">
-                                    <div class="skill-title">
-                                        Graphic Design
-                                        <div class="count"><span>50%</span></div>
-                                    </div>
-                                    
-                                    <div class="skill-bar" data-bar="50"><span></span></div>
-                                </div>
-                                <!-- #skill -->
+                    <div class="col-8 col-lg-9 simple-navbar">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="nav-link home" href="#">HOME</a></li>
+                                    <li class="nav-item"><a class="nav-link scroll" href="#about-sec">ABOUT</a></li>
+                                    <li class="nav-item"><a class="nav-link scroll" href="#company-portfolio-section">PORTFOLIO</a></li>
+                                    <li class="nav-item"><a class="nav-link scroll" href="#testimonial-sec">CLIENTS</a></li>
+                                    <li class="nav-item hide"><a class="nav-link scroll" href="#blog-sec">BLOG</a></li>
+                                    <li class="nav-item"><a class="nav-link scroll" href="#contact-sec">CONTACT</a></li>
+                                </ul>
                             </div>
-
-
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--ABOUT AREA END-->
-
-    <!--SERVICE AREA-->
-    <section class="service-area gray-bg section-padding" id="service" >
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                    <div class="area-title text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <h2 class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">My Services</h2>
+                        </nav>
                         
                     </div>
                 </div>
             </div>
-           <div class="row row-eq-height">
+        </div>
+        <!--toggle btn-->
+        <a href="javascript:void(0)" class="sidemenu_btn" id="sidemenu_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <!-- =================================== 
+    Side Nav 
+    ====================================== -->
 
-                
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 single-service text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="service-icon"><i class="fa fa-laptop"></i></div>
-                        <h3>Web Design</h3>
-                        <p>When you’re designing your website, ask yourself: “What should this site do?” The answers may be simple or complex. But once you have those answers in place, we can help you make sure you get them right.</p>
-                    
+
+    <div class="side-menu hidden side-menu-opacity">
+        <div class="bg-overlay"></div>
+        <div class="inner-wrapper">
+            <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+            <div class="container">
+                <div class="row w-100 side-menu-inner-content">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="#" class="navbar-brand"><img src="img/logow.png" alt="logo"></a>
                 </div>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 single-service text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="service-icon"><i class="fa fa-code"></i></div>
-                        <h3>Web Development</h3>
-                        <p>I am problem solver, designer, researcher and developer. Although I love technology and usability, I do not sacrifice the human factor before everything else. At the end of the day, I am here to make your users happy!</p>
+                <div class="col-12 col-lg-8">
+                    <nav class="side-nav w-100">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#about-sec">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#company-portfolio-section">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#testimonial-sec">CLIENTS</a>
+                            </li>
+                            <li class="nav-item hide">
+                                <a class="nav-link scroll" href="#blog-sec">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#contact-sec">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 single-service text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="service-icon"><i class="fa fa-picture-o"></i></div>
-                        <h3>Graphic Design</h3>
-                        <p>These are the words I live by in everything I do. Every story I tell, every brand I build, and every interaction I create must look beautiful. </p>
+                <div class="col-12 col-lg-4 d-flex align-items-center">
+                    <div class="side-footer text-white w-100">
+                        <div class="menu-company-details">
+                            <span><a target="_blank" href="https://goo.gl/maps/FfLykZhui1EfzYJr9"><i class="lni lni-location-arrow-right addr"></i> Surrey BC., Canada</a></span>
+                            <span><a href="mailto:dottenbreit@gmail.com"><i class="las la-envelope"></i> e-mail</a></span>
+                        </div>
+                        <ul class="social-icons-simple">
+                            <li><a class="linkedin-text-hvr" target="_blank" href="https://www.linkedin.com/in/derrickottenbreit"><i class="lni lni-linkedin"></i> </a> </li>
+                            <li><a class="git-text-hvr" target="_blank" href="https://github.com/dottDesign/"><i class="lni lni-github"></i> </a> </li>
+
+                        </ul>
+                        <p class="text-white">Copyright ©<span id="year"></span> dottDesign All Rights Reserved</p>
+                    </div>
                 </div>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 single-service text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="service-icon"><i class="fa fa-wrench"></i></div>
-                        <h3>Maintenance</h3>
-                        <p>There isnt anything that is too small. Sometimes you just need a small tweek & sometimes you need a major overhaul. I can work with you to make sure you can sleep at night knowing your website is exactly how you want it.</p>
-                </div>
-           
+            </div>
             </div>
         </div>
-    </section>
-    <!--SERVICE AREA END-->
+    </div>
+    <a id="close_side_menu" href="javascript:void(0);"></a>
 
-    <!--EXPERIENCE AREA-->
-    <section class="experience-area section-padding" id="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                    <div class="area-title text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <h2 class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">My Experience</h2>
+</header>
+<!--Header End-->
+
+
+   <!-- =================================== 
+    Slider Section Start
+    ====================================== -->
+<section class="slider-area">
+    <div class="bg-overlay"></div>
+    <div class="container position-relative">
+        <div class="inner-bg-overlay"></div>
+        <div class="row">
+            <div class="slider-detail col-12 col-lg-6 text-center text-lg-left wow fadeInLeft" data-wow-delay=".8s">
+                <div class="slider-slide">
+                    <div class="slider-inner-content">
+                        <h4 class="slide-heading"><span class="small">Hello, I am <br/><br/></span>DERRICK OTTENBREIT<br/><br/>
+                            <span class="small">FRONTEND / UI DEVELOPER</span></h4>
+                        <p class="hide slide-text">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.</p>
+                        <a href="#about-sec" class="btn anim-btn rounded-pill scroll">LEARN MORE
+                            <span></span><span></span><span></span><span></span>
+                        </a>
                     </div>
                 </div>
+                
+            
+              
             </div>
-            <div class="row">
-                
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="single-experience wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="working-organization">
-                            <h5>Web Consultant & Front End Developer</h5>
-                            <p>01/2009 - Current</p>
-                        </div>
-                        <h3>Front End Developer</h3>
-                        <p>Collaborating with clients to identify project requirements, translating goals into functional and visually appealing interfaces.</p>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="single-experience wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="working-organization">
-                            <h5>Jobvite</h5>
-                            <p>12/2018 - 12/2024 </p>
-                        </div>
-                        <h3>UI Developer</h3>
-                        <p>Development of fortune 500 company career websites using liquid code and dynamic content from multiple databases in a fast paced environment. </p>
-                    </div>
+            
+            <div class="slider-img col-12 col-lg-6 wow fadeInRight" data-wow-delay=".8s" data-depth="0.1">
+                <div class="img-slide">
+                    <img src="img/d-slide.jpg">
                 </div>
                 
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="single-experience wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="working-organization">
-                            <h5>Fourcross Marketing</h5>
-                            <p>07/2011 - 10/2012</p>
-                        </div>
-                        <h3>Lead Front End Developer</h3>
-                        <p>Developed and implemented over 100 websites across multiple CMS’s & mobile devices. Designed, implemented and monitored web pages and sites for continuous improvement in a fast-paced environment.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="single-experience wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="working-organization">
-                            <h5>myRealPage</h5>
-                            <p>04/2009 - 10/2018</p>
-                        </div>
-                        <h3> Front End Developer</h3>
-                        <p>Monitored, identified and resolved performance, behavior and attendance issues for a remote team of 8 - 10 diverse individuals while overseeing daily operations. Developed website templates for the proprietary CMS as well as 300+ article training center.</p>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
-    <!--EXPERIENCE AREA END-->
-
-    <!--FUN FACT AREA-->
-    <section class="fun-fact-area gray-bg section-padding" id="fact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-fun-fact text-center wow fadeIn">
-                        <div class="fact-icon"><img src="img/coffeemug.svg" alt=""></div>
-                        <p>Cups of Coffee</p>
-                        <h3><span class="counter">21</span>k +</h3>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-fun-fact text-center wow fadeIn">
-                        <div class="fact-icon"><img src="img/calendar.svg" alt=""></div>
-                        <p>Years Experience</p>
-                        <h3><span class="counter">16</span> +</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-fun-fact text-center wow fadeIn">
-                        <div class="fact-icon"><img src="img/employees.svg" alt=""></div>
-                        <p>Happy Clients</p>
-                        <h3><span class="counter">200</span> +</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                    <div class="single-fun-fact text-center wow fadeIn">
-                        <div class="fact-icon"><img src="img/code.svg" alt=""></div>
-                        <p>Lines Of Code</p>
-                        <h3><span class="counter">300</span>k +</h3>
-                    </div>
-                </div>
-            </div>
+        <div class="slider-arrows hide">
+            <a href="javascript:void(0);" class="slider-arr slider-arr-up" id="slider-arr-up"><i class="fas fa-angle-up"></i></a>
+            <a href="javascript:void(0);" class="slider-arr slider-arr-down" id="slider-arr-down"><i class="fas fa-angle-down"></i></a>
         </div>
-    </section>
-    <!--FUN FACT AREA END-->
+    </div>
+</section>
+   <!-- =================================== 
+    Slider Section End
+    ====================================== -->
 
-    <!--PORTFOLIO AREA-->
-      <!--
-    <section class="portfolio-area section-padding hide" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                    <div class="area-title text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <h2 class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">My Portfolio</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row portfolio-list" style="position: relative; height: 1024.05px;">
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 web" style="display: block; position: absolute; left: 0px; top: 0px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_1.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_1.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 graphic" style="display: block; position: absolute; left: 390px; top: 0px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_2.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_2.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 print web" style="display: block; position: absolute; left: 780px; top: 0px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_3.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_3.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 graphic" style="display: block; position: absolute; left: 390px; top: 302px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_8.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_8.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 print web" style="display: block; position: absolute; left: 0px; top: 419px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_4.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_4.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 illustration" style="display: block; position: absolute; left: 780px; top: 419px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_5.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_5.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 graphic illustration" style="display: block; position: absolute; left: 0px; top: 721px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_6.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_6.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 print" style="display: block; position: absolute; left: 390px; top: 721px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_7.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_7.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-items col-md-4 col-lg-4 col-sm-6 col-xs-12 illustration" style="display: block; position: absolute; left: 780px; top: 721px;">
-                    <div class="single-portfolio relative">
-                        <div class="gallery-img">
-                            <img src="img/portfolio_9.jpg" alt="">
-                        </div>
-                        <div class="portfolio-details vcenter">
-                            <a class="portfolio-popup" href="portfolio_9.jpg" data-effect="mfp-zoom-in" data-ol-has-click-handler=""><i class="fa fa-expand"></i></a>
-                            <div class="portfolio-hidding">
-                                <h3>Product Branding</h3>
-                                <p>Illustrations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!--PORTFOLIO AREA END-->
-
-<!--TESTMONIAL AREA-->
-<!--
-<section class="hide testmonial-area gray-bg section-padding" id="testmonial">
+   <!-- =================================== 
+    About Section Start
+    ====================================== -->
+<section class="about-sec" id="about-sec">
+    <div class="about-overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-lg-10 col-lg-offset-1 col-sm-12 col-xs-12">
-                <div class="row">
-                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-                        <div class="testmonial-member-image-slider ">
-                           
-                                    <div class="single-member-img" >
-                                        <img src="img/testmonial_slide_member_1.png" alt="">
-                                    </div>
-                                    <div class="single-member-img" >
-                                        <img src="img/testmonial_slide_member_2.png" alt="">
-                                    </div>
-                                    <div class="single-member-img" >
-                                        <img src="img/testmonial_slide_member_3.png" alt="">
-                                    </div>
-                              
+            <div class="col-12 col-lg-6 services-area padding-top padding-bottom">
+                <div class="blue-overlay"></div>
+                <div class="row no-gutters wow fadeInLeft">
+                    <div class="col-12 col-lg-6 services text-center">
+                        <div class="service-card">
+                            <div class="icon-holder">
+                                <i class="lni lni-monitor-code"></i>
+                            </div>
+                            <h4 class="card-heading">Development</h4>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-                        <div class="testmonial-text-slider">
-                                   
-                                    <div class="single-testmonial" >
-                                        <div class="testmonial-author-details">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ellamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-testmonial slick-slide" >
-                                        <div class="testmonial-author-details">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ellamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-testmonial slick-slide" >
-                                        <div class="testmonial-author-details">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ellamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                                        </div>
-                                    </div>
-                                   
+                    <div class="col-12 col-lg-6 services text-center">
+                        <div class="service-card">
+                            <div class="icon-holder">
+                                <i class="lni lni-gallery"></i>
+                            </div>
+                                <h4 class="card-heading">Design</h4>
                         </div>
-                        <div class="testmonial-thumbnail-slider">
-                           
-                                    <div class="single-tesmonial-thumb" >
-                                        <img src="img/testmonial_slide_member_1.png" alt="">
-                                    </div>
-                                    <div class="single-tesmonial-thumb" >
-                                        <img src="img/testmonial_slide_member_2.png" alt="">
-                                    </div>
-                                    <div class="single-tesmonial-thumb" >
-                                        <img src="img/testmonial_slide_member_3.png" alt="">
-                                    </div>
-                                
+                    </div>
+                    <div class="col-12 col-lg-6 services text-center">
+                        <div class="service-card">
+                            <div class="icon-holder">
+                                <i class="lni lni-hammer-2"></i>
+                            </div>
+                                <h4 class="card-heading">Maintenance</h4>
                         </div>
+                    </div>
+                    <div class="col-12 col-lg-6 services text-center">
+                        <div class="service-card">
+                            <div class="icon-holder">
+                                <i class="lni lni-user-multiple-4"></i>
+                            </div>
+                            <h4 class="card-heading">Consultations</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 about-area padding-top padding-bottom text-center text-lg-left">
+                <div class="about-content wow fadeInRight">
+                    <div class="about-inner-content">
+                        <h4 class="heading">ABOUT ME</h4>
+                        <p class="text">
+                           <p class="text">Hi there! I'm Derrick, I am a web development leader with 16+ years of experience, leading teams and delivering successful projects.</p>
+                           <p class="text">I love a good challenge, whether it's designing something new or collaborating with clients to create something you wouldn't have thought possible. </p>
+
+                           <blockquote>“No! Try not. Do. Or do not. There is no try.” <br/><cite>~Yoda</cite></blockquote>
+
+                           <p class="text">Expertise spans front-end development, CMS/eCommerce, branding, and team leadership. Proven ability to lead cross functional teams, mentor developers, and implement efficient workflows. Successfully delivered 200+ high-traffic, accessible websites with optimized performance and user engagement. Skilled in UI/UX, CMS integrations, and translating client needs into successful, results-driven solutions.</p>
+                           <p class="text">I take pride in ensuring our clients get exactly what they want and need. When I'm not working in my home office, you'll find me spending time with my beautiful wife, two amazing children & friends.</p>
+                           <a href="downloads/DERRICK_OTTENBREIT_RESUME.pdf" class="btn anim-btn rounded-pill">Download my CV<span></span><span></span><span></span><span></span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
--->
-<!--TESTMONIAL AREA END-->
+   <!-- =================================== 
+    About Section End
+    ====================================== -->
 
-    <!--BLOG AREA-->
-     <!--
-    <section class="blog-area padding-top hide" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                    <div class="area-title text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <h2>LATEST NEWS</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    </div>
+   <!-- =================================== 
+    Stats Section Start
+    ====================================== -->
+<section class="stats-sec padding-top padding-bottom" id="stats-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 stats-heading-area text-center">
+                <h4 class="heading">AGENCY STATS & FACTS</h4>
+                
+            </div>
+        </div>
+        <div class="row circular-wrap text-center">
+            <div class="col-12 col-lg-3 wow bounceIn range-icon">
+                    <span id="count1" class="display-1"></span><span class="large">K+</span>
+                <h4 class="darkcolor">Cups of Caffeine</h4>
+                <i class="lni lni-coffee-cup-2"></i>
+
+            </div>
+            <div class="col-12 col-lg-3 wow bounceIn range-icon">
+                    <span id="count2" class="display-1"></span>YRS
+                <h4 class="darkcolor">Experience</h4>
+                    <i class="lni lni-calendar-days"></i>
+
+            </div>
+            <div class="col-12 col-lg-3 wow bounceIn range-icon">
+                   <span id="count3" class="display-1"></span>+
+                <h4 class="darkcolor">Happy Clients</h4>
+                    <i class="lni lni-emoji-smile-sunglass"></i>
+
+            </div>
+            <div class="col-12 col-lg-3 wow bounceIn range-icon">
+                    <span id="count4" class="display-1"></span>K+
+                <h4 class="darkcolor">Lines of code</h4>
+                    <i class="lni lni-code-1"></i>
+
+            </div>
+        </div>
+
+
+
+
+<section class="bg-dark text-white">
+ <div class="container">
+  <div class="row justify-content-center text-center">
+   <div class="col-12">
+   </div>
+   <div class="col-md-4">
+    <span id="count1" class="display-4"></span>
+   </div>
+   <div class="col-md-4">
+    
+   </div>
+   <div class="col-md-4">
+    <span id="count3" class="display-4"></span>
+   </div>
+  </div>
+ </div>
+</section>
+
+
+    </div>
+</section>
+   <!-- =================================== 
+    Stats Section End
+    ====================================== -->
+    
+   <!-- =================================== 
+    Team Section Start
+    ====================================== -->
+<section class="team-sec position-relative" id="team-sec">
+    <div class="left-overlay"></div>
+    <div class="container">
+        <div class="row inner-team-sec padding-top padding-bottom">
+            <div class="col-12 col-lg-4 text-center text-lg-left">
+                <div class="team-detail wow fadeInLeft">
+                    <h4 class="heading">PLACES I<span>HAVE WORKED</span></h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-                    <div class="single-blog text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="post-thumbnail"><img src="img/blog_1.jpg" alt=""></div>
-                        <div class="blog-post-details">
-                            <p class="blog-meta"><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-user"></i> By: Admin</a><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-calendar"></i> Aug 15, 2017</a></p>
-                            <h3><a href="https://quomodosoft.com/html/jony/demo/single-post.html">This Is Dummy Blog Title</a></h3>
-                            <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimve[...]</p>
-                            <div class="read-more-and-post-meta">
-                                <a href="https://dottdesign.github.io/portfolio/#" class="read-more">Read More</a>
-                                <p class="blog-meta"><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-heart-o"></i> 255 likes</a><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-comment"></i> 256 comments</a></p>
+            <div class="col-12 col-lg-8">
+                <div class="team-area wow fadeInRight">
+                    <div class="row no-gutters team-carousel owl-carousel owl-theme">                        
+                        <div class="item text-center">
+                            <div class="team-box">
+                                <div class="single-experience wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="working-organization">
+                                        <h5>Web Consultant & Front End Developer</h5>
+                                        <p>01/2009 - Current</p>
+                                    </div>
+                                    <h3>Front End Developer</h3>
+                                    <p>I designed and developed responsive websites, improving load times by 30% and enhancing user engagement by 25% through optimized code and modern design principles.  Collaborating with clients to identify project requirements, I translated goals into functional and visually appealing interfaces that increased client satisfaction by 20%.  My implementation of SEO strategies boosted organic traffic by 40% within six months, driving measurable growth in site visibility and lead generation.  Furthermore, I streamlined workflows by integrating automated tools, reducing development time by 15% and improving project delivery rates.  Finally, building reusable code libraries and UI components ensured scalability and consistency across multiple projects, saving an average of 10% on development costs per project.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div class="team-box">
+                                <div class="single-experience wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="working-organization">
+                                        <h5>Jobvite</h5>
+                                        <p>12/2018 - 12/2024 </p>
+                                    </div>
+                                    <h3>UI Developer/Project Manager</h3>
+                                    <p>I integrated responsive design techniques to ensure seamless functionality across devices, adhering to WCAG 2.1 guidelines and implementing ARIA techniques.  Working closely with QA teams, I identified and resolved UI issues, achieving a 98% defect-free rate on delivered projects. I streamlined API integration with front-end systems, enhancing data display efficiency by 35%, and mentored junior developers on UI best practices and modern frameworks, improving team productivity by 20%.  Through optimized code and efficient resource management, I designed and implemented user interfaces for web applications, improving page load times by 30%.  Collaborating with cross-functional teams using Agile frameworks, I delivered high-quality user interfaces within tight deadlines.  Often acting as project manager and developer during periods of high workload, I provided timelines, progress updates to clients and team members, and maintained project scope.</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div class="team-box">
+                                <div class="single-experience wow fadeIn">
+                                    <div class="working-organization">
+                                        <h5>myRealPage</h5>
+                                        <p>04/2009 - 10/2018</p>
+                                    </div>
+                                    <h3>Front End Developer</h3>
+                                    <p>I enhanced user satisfaction by 30% by designing and implementing intuitive front-end interfaces for the company's real estate platform, ensuring seamless navigation and functionality.  This involved collaborating with cross-functional teams to identify and resolve user pain points, resulting in a 25% reduction in support tickets related to UI/UX issues.  I also developed responsive and accessible web designs, increasing platform usability across devices and achieving a 20% rise in mobile engagement.  Furthermore, I optimized website performance through code refactoring, reducing page load times by 35% and improving overall platform efficiency.  By analyzing customer feedback to prioritize feature development, I contributed to a 15% increase in client retention.  Finally, I developed the company website and an internal training catalog of over 200 articles built on WordPress.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div class="team-box">
+                                <div class="single-experience wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="working-organization">
+                                        <h5>Fourcross Marketing</h5>
+                                        <p>07/2011 - 10/2012</p>
+                                    </div>
+                                    <h3>Lead Front End Developer</h3>
+
+                                    <p>I directed the development of responsive and accessible web applications, resulting in a 40% improvement in user engagement metrics.  This involved spearheading the implementation of modern frameworks and tools, which reduced page load times by 30% and enhanced site performance.  Through collaboration with designers and backend teams, I delivered seamless user experiences, driving a 25% increase in client satisfaction scores.  Additionally, I designed reusable and scalable UI components, cutting development time for new projects by 20%, and conducted rigorous code reviews and implemented best practices, reducing bugs in production by 50%.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-                    <div class="single-blog text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="post-thumbnail"><img src="img/blog_2.jpg" alt=""></div>
-                        <div class="blog-post-details">
-                            <p class="blog-meta"><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-user"></i> By: Admin</a><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-calendar"></i> Aug 15, 2017</a></p>
-                            <h3><a href="https://quomodosoft.com/html/jony/demo/single-post.html">This Is Dummy Blog Title</a></h3>
-                            <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimve[...]</p>
-                            <div class="read-more-and-post-meta">
-                                <a href="https://dottdesign.github.io/portfolio/#" class="read-more">Read More</a>
-                                <p class="blog-meta"><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-heart-o"></i> 255 likes</a><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-comment"></i> 256 comments</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-                    <div class="single-blog text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="post-thumbnail"><img src="img/blog_3.jpg" alt=""></div>
-                        <div class="blog-post-details">
-                            <p class="blog-meta"><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-user"></i> By: Admin</a><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-calendar"></i> Aug 15, 2017</a></p>
-                            <h3><a href="https://quomodosoft.com/html/jony/demo/single-post.html">This Is Dummy Blog Title</a></h3>
-                            <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimve[...]</p>
-                            <div class="read-more-and-post-meta">
-                                <a href="https://dottdesign.github.io/portfolio/#" class="read-more">Read More</a>
-                                <p class="blog-meta"><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-heart-o"></i> 255 likes</a><a href="https://dottdesign.github.io/portfolio/#"><i class="fa fa-comment"></i> 256 comments</a></p>
-                            </div>
-                        </div>
-                    </div>
+
+                    <a href="javascript:void(0);" class="team-nav team-prev" id="team-prev">
+                        <i class="fas fa-angle-left"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="team-nav team-next" id="team-next">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-    -->
-    <!--BLOG AREA END-->
+    </div>
+</section>
+   <!-- =================================== 
+    Team Section End
+    ====================================== -->
 
-    <!--CONTACT AREA-->
-    <section class="contact-area gray-bg padding-top" id="contact">
-        <div class="container">
+
+   <!-- =================================== 
+    Portfolio Section Start
+    ====================================== -->
+<section class="portfolio-sec company-portfolio-section padding-top" id="company-portfolio-section">
+    <div class="container">
+        <div class="section-heading">
             <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <div class="contact-area-details">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                <div class="contact-form-area wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                                    <h2>I am available for Freelance</h2>
-                                    <div class="contact-form">
+                <div class="col-lg-6 wow fadeInUp text-center text-lg-left" data-wow-delay="300ms">
+                   <h4 class="heading">MY WORKS</h4>
+                </div>
+                <div class="col-md-12 pt-5">
+                    <div id="js-filters-mosaic" class="cbp-l-filters-button wow fadeInUp text-center text-lg-left" data-wow-delay="350ms">
+                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> ALL</div>
+                        <div data-filter=".web" class="cbp-filter-item">WEB DESIGN</div>
+                        <div data-filter=".logo" class="cbp-filter-item">LOGO DESIGN</div>
+                        <div data-filter=".mobile" class="cbp-filter-item">MOBILE APP</div>
+                        <div data-filter=".development" class="cbp-filter-item">DEVELOPMENT</div>
+                    </div>
+
+                    <div id="js-grid-mosaic" class="cbp cbp-l-grid-mosaic">
+                        <div class="cbp-item web development">
+                            <a href="img/nb1.jpg" class="cbp-caption cbp-lightbox" data-title="Newton Canadian Baseball Homepage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="img/nb1.jpg" alt="img">
+                                </div>
+                                <div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
+                                    <div class="portfolio-inner-content">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="hover-text">
+                                        <h4 class="p-hover-title">Newton Canadian Baseball</h4>
+                                        <p class="p-hover-des">Wordpress</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="cbp-item web development">
+                            <a href="img/sip1.jpg" class="cbp-caption cbp-lightbox" data-title="Sipco Innovations Home Page">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="img/sip1.jpg" alt="img">
+                                </div>
+                                <div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
+                                    <div class="portfolio-inner-content">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="hover-text">
+                                        <h4 class="p-hover-title">Sipco Innovations</h4>
+                                        <p class="p-hover-des">Wordpress</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="cbp-item development web ">
+                            <a href="img/hz1.jpg" class="cbp-caption cbp-lightbox" data-title="Hygrozyme Home Page">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="img/hz1.jpg" alt="img">
+                                </div>
+                                <div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
+                                    <div class="portfolio-inner-content">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="hover-text">
+                                        <h4 class="p-hover-title">Hygrozyme</h4>
+                                        <p class="p-hover-des">Wordpress</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                       
+
+
+                    </div>
+
+                    <div class="hide" id="js-loadMore-lightbox-gallery" class="cbp-l-loadMore-button text-data wow fadeInUp" data-wow-delay="650ms">
+                        <div class="row portfolio-foot-detail text-data-inner">
+                            <div class="col-7 col-lg-4 offset-lg-6 text-left pl-4">
+                                <span class="p-text">We've Completed More Then</span>
+                                <h4 class="p-num">530</h4>
+                                <span class="p-text">Projects for MY amazing Clients</span>
+                            </div>
+                            <div class="col-5 col-lg-2 d-flex justify-content-end align-items-center"><button class="btn green-btn rounded-pill">VIEW ALL<span></span><span></span><span></span><span></span></button> </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- =================================== 
+    Portfolio Section End
+    ====================================== -->
+
+   <!-- =================================== 
+    testimonial Section Start
+    ====================================== -->
+<div class="testimonial-sec padding-top position-relative" id="testimonial-sec">
+    <div class="right-overlay"></div>
+    <div class="container">
+        <div class="testimonial-area padding-top padding-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center text-center text-lg-left">
+                        <div class="testimonial-details wow fadeInLeft">
+                            <h4 class="heading">WHAT<span>THEY SAY</span></h4>
+                        
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 offset-lg-1">
+                        <div class="testimonial-carousel wow fadeInRight">
+                            <div class="testimonial-box owl-carousel owl-theme">
+                                
+                                <div class="item text-center">
+                                    <div class="icon-holder">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p class="text">
+                                        Derrick consistently applies best practices to customer projects, ensuring high-quality, maintainable, and scalable solutions. He has a knack for simplifying complex problems, creating elegant and efficient solutions that are easy to understand and implement.</p>
+                                    <h4 class="user-name">Doyle</h4>
+                                    <a class="btn anim-btn rounded-pill" target="_blank" href="https://www.linkedin.com/in/derrickottenbreit/details/recommendations/">SEE MORE<span></span><span></span><span></span><span></span></a>
+
+                                </div>
+                                <div class="item text-center">
+                                    <div class="icon-holder">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p class="text">
+                                        Our clients consistently praised Derrick for his collaborative nature, flexibility, and consultative approach. He was always easy to work with, readily adapting to changing needs and providing valuable guidance when clients were uncertain.</p>
+                                        <h4 class="user-name">Mai</h4>
+                                    <a class="btn anim-btn rounded-pill" target="_blank" href="https://www.linkedin.com/in/derrickottenbreit/details/recommendations/">SEE MORE<span></span><span></span><span></span><span></span></a>
+                                </div>
+                                <div class="item text-center">
+                                    <div class="icon-holder">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p class="text">
+                                        Derrick is exceptionally knowledgeable and creative - whatever he creates works. He listens and carefully crafts an outcome that's better than expected.</p>
+                                    <h4 class="user-name">Sharon</h4>
+                                    <a class="btn anim-btn rounded-pill" target="_blank" href="https://www.linkedin.com/in/derrickottenbreit/details/recommendations/">SEE MORE<span></span><span></span><span></span><span></span></a>
+                                </div>
+                            </div>
                             
-
-                                        <form action="process.php" id="contact-form" method="post">
-                                            <div class="form-group" id="name-field">
-                                                <div class="form-input">
-                                                    <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Name.." required="" >
-                                                </div>
-                                            </div>
-                                            <div class="form-group" id="email-field">
-                                                <div class="form-input">
-                                                    <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email.." required="">
-                                                </div>
-                                            </div>
-                                            <div class="form-group" id="subject-field">
-                                                <div class="form-input">
-                                                    <input type="text" class="form-control" id="form-subject" name="form-subject" placeholder="Subject">
-                                                </div>
-                                            </div>
-                                            <div class="form-group" id="message-field">
-                                                <div class="form-input">
-                                                    <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="Your Message Here..." required=""></textarea>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group" id="captcha-field">
-                                                <div class="form-input">
-                                                    <canvas width="257" height="40" id="captcha">Captcha Text</canvas>
-                                                </div>
-                                               
-                                            </div>
-
-                                            <div class="form-group" id="captchatext-field">
-                                                <div class="form-input">
-                                                    <input class="form-control" id="textBox" type="text" name="text" placeholder="Enter Captcha Text">
-
-                                                </div>
-                                            </div>
-
-                                        
-                                            <div class="form-group" id="buttons-field">
-                                                <button id="refreshButton" type="button">New Captcha</button>
-                                                <button id="submitButton" type="submit">Send Message</button>
-                                                <span id="output"></span>
-                                            </div>
- 
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 col-sm-12 col-xs-12">
-                                <div class="footer-right-area wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                                    <h2>Contact Address</h2>
-                                    <div class="footer-right-contact">
-                                        <div class="single-contact">
-                                            <div class="contact-icon">
-                                                <i class="fa fa-map-marker"></i>
-                                            </div>
-                                            <p><a target="_blank" href="https://goo.gl/maps/FfLykZhui1EfzYJr9">Surrey BC., Canada</a></p>
-                                        </div>
-                                        <div class="single-contact">
-                                            <div class="contact-icon">
-                                                <i class="fa fa-envelope"></i>
-                                            </div>
-                                            <p><a class="mail" href="mailto:dottenbreit@gmail.com">e-mail</a></p>
-                                        </div>
-                                        <!-- <div class="single-contact">
-                                            <div class="contact-icon">
-                                                <i class="fa fa-facebook"></i>
-                                            </div>
-                                            <p><a target="_blank" href="https://www.facebook.com/dottDesign.ca/">@dottDesign.ca</a></p>
-                                        </div>
- -->
-                                        <div class="single-contact">
-                                            <div class="contact-icon">
-                                                <i class="fa fa-linkedin"></i>
-                                            </div>
-                                            <p><a target="_blank" href="https://www.linkedin.com/in/derrickottenbreit/">@derrickottenbreit</a></p>
-                                        </div>
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                    <div class="hide">
+                        <a href="javascript:void(0);" class="testimonial-nav testimonial-prev" id="testimonial-prev">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="testimonial-nav testimonial-next" id="testimonial-next">
+                            <i class="fas fa-angle-right"></i>
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--CONTACT AREA END-->
-
-    <!--FOOER AREA-->
-    <div class="footer-area gray-bg">
-        <div class="container">
-            <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <div class="hide social-bookmark">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-copyright text-center">
-                        <p>Copyright ©<span id="year"></span> dottDesign All Rights Reserved</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--FOOER AREA END-->
+</div>
+   <!-- =================================== 
+    testimonial Section End
+    ====================================== -->
 
-    <!--====== SCRIPTS JS ======-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+   <!-- =================================== 
+    sponsers Section Start
+    ====================================== -->
+<div class="sponser-sec padding-top hide" id="sponser-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="sponser-tags owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="img/brand4.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/brand4.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/brand4.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/brand4.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/brand4.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/brand4.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- =================================== 
+    sponsers Section End
+    ====================================== -->
 
-    <!--====== PLUGINS JS ======-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
-    <script src="js/contact-form.js"></script>
+
+   <!-- =================================== 
+    blog Section Start
+    ====================================== -->
+<section class="blog-sec hide" id="blog-sec">
+    <div class="left-overlay"></div>
+    <div class="container position-relative">
+        <div class="blog-inner-overlay"></div>
+        <div class="row blog-area">
+            <div class="col-12 col-lg-5 d-flex align-items-center text-center text-lg-left">
+                <div class="blog-detail wow fadeInLeft">
+                    <h4 class="heading">LATEST <span>DESIGN BLOGS</span></h4>
+                    <p class="text">
+                        Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.
+                    </p>
+                    <a class="btn anim-btn rounded-pill" href="standard-blog.html">LEARN MORE
+                    <span></span><span></span><span></span><span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 offset-lg-1">
+                <div class="blog-img wow fadeInRight">
+                    <img src="img/blog1.png" alt="blog-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- =================================== 
+    blog Section End
+    ====================================== -->
 
 
-    <!--===== ACTIVE JS=====-->
-    <script src="js/main.js"></script>
-    <script src="js/captcha.js"></script>
+   <!-- =================================== 
+    contact Section Start
+    ====================================== -->
+<section class="contact-sec padding-top padding-bottom" id="contact-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <h4 class="heading text-center text-lg-left">GET IN TOUCH</h4>
+                <div class="contact-form">
+                    <form class="row contact-form wow fadeInLeft" action="process.php" id="contact-form" method="post">
+                         <div class="col-12 col-md-5">
+                            <div class="form-group" id="name-field">
+                            <div class="form-input">
+                                <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Name" required="" >
+                            </div>
+                        </div>
+                        <div class="form-group" id="email-field">
+                            <div class="form-input">
+                                <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email" required="">
+                            </div>
+                        </div>
+                        <div class="form-group" id="subject-field">
+                            <div class="form-input">
+                                <input type="text" class="form-control" id="form-subject" name="form-subject" placeholder="Subject">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="form-group" id="message-field">
+                            <div class="form-input">
+                                <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="Your Message Here" required=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5">
+                        <canvas width="auto" height="50px" id="captcha" >captcha text</canvas>
+                        
+                    </div>
+                    <div class="col-12 col-md-7">
+                       <input id="CaptchatextBox" type="text" name="text" placeholder="Enter Captcha Text">
+                   </div>
+                    
+                            <div class="col-12 col-md-5">
+                            <button class=blue-btn rounded-pill w-100" id="refreshButton" type="button"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i>Refresh Captcha<span></span><span></span><span></span><span></span><span></span></button>
+                            </div>  
 
 
-    <!--===== ACTIVE WOW JS=====-->
-    <script>
-        new WOW().init();
+                            <div class="col-12 col-md-7">
+                            <button class=blue-btn rounded-pill w-100 contact_btn" id="submitButton" type="submit"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i>Send Message<span></span><span></span><span></span><span></span><span></span></button>
+                        </div>
+                            <span id="output"></span>
+                      
+ 
+                    </form>
+                </div>
+                </div>
 
-    document.getElementById("year").innerHTML = new Date().getFullYear();
 
-    </script>
-    
-<div style="position: static !important;"></div></body></html>
+
+       
+
+
+            <div class="col-12 col-lg-5 text-center text-lg-left position-relative">
+                <div class="contact-details wow fadeInRight">
+                    <h4 class="heading">FIND ME</h4>
+                    <ul>
+                        <li><i class="lni lni-location-arrow-right addr"></i><a target="_blank" href="https://goo.gl/maps/FfLykZhui1EfzYJr9">Surrey BC., Canada</a></li>
+                        <li><i class="lni lni-envelope-1 email"></i><a class="mail" href="mailto:dottenbreit@gmail.com">e-mail</a></li>
+                        <li><i class="lni lni lni-linkedin con-linked"></i> <a target="_blank" href="https://www.linkedin.com/in/derrickottenbreit">linkedin.com/in/derrickottenbreit</a></li>
+                        <li><i class="lni lni-github con-git"></i> <a target="_blank" href="https://github.com/dottDesign/">github.com/dottDesign</a></li>
+
+                    </ul>
+                </div>
+                <img src="img/contact-background.png" class="contact-background" alt="contact">
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- =================================== 
+    contact Section Start
+    ====================================== -->
+
+
+<!--colored-lines-->
+<div class="color-lines row no-gutters">
+    <div class="col-4 bg-stone"></div>
+    <div class="col-4 bg-blue"></div>
+    <div class="col-4 bg-green"></div>
+</div>
+<!--Footer Start-->
+<footer class="footer-style-1">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <!--Social-->
+            <div class="col-lg-6">
+                <div class="footer-social text-center text-lg-left ">
+                    <ul class="list-unstyled">
+                       
+                        <li><a class="wow fadeInDown" target="_blank" href="https://www.linkedin.com/in/derrickottenbreit"><i aria-hidden="true" class="lni lni-linkedin"></i></a></li>
+                        <li><a class="wow fadeInDown" target="_blank" href="https://github.com/dottDesign/"><i aria-hidden="true" class="lni lni-github"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--Text-->
+            <div class="col-lg-6 text-center text-lg-right">
+                <p class="company-about fadeIn">Copyright ©<span id="year"></span> dottDesign All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End-->
+
+<!--Scroll Top Start-->
+<span class="scroll-top-arrow"><i class="fas fa-angle-up"></i></span>
+<!--Scroll Top End-->
+
+<!-- JavaScript -->
+<script src="js/bundle.min.js"></script>
+<!-- Plugin Js -->
+<script src="js/jquery.appear.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/parallaxie.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="js/jquery.themepunch.tools.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/jquery.cubeportfolio.min.js"></script>
+<!-- SLIDER REVOLUTION EXTENSIONS -->
+<script src="js/extensions/revolution.extension.actions.min.js"></script>
+<script src="js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="js/extensions/revolution.extension.migration.min.js"></script>
+<script src="js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="js/extensions/revolution.extension.video.min.js"></script>
+
+<!--Tilt Js-->
+<script src="js/slick.js"></script>
+<script src="js/slick.min.js"></script>
+<!-- custom script-->
+<!-- <script src="js/circle-progress.min.js"></script> -->
+
+<script src="js/contact_us.js"></script>
+
+<script src="js/script.js"></script>
+<script src="js/captcha.js"></script>
+
+</body>
+</html>
